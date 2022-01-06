@@ -1,5 +1,5 @@
-dist
-
-!dist/css
+!dist/
+dist/*
+!dist/css/
 !dist/index.html
-!dist/sounds
+!dist/sounds/

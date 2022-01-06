@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #212c40;
+    color: #eee;
+    font-family: monospace, "Courier New", Courier;
+    font-size: 13px;
+}
+
+#lists,
+#wheel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#lists {
+    width: 350px;
+    flex-shrink: 0;
+}
+
+#lists > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 100%;
+}
+
+input[type="number"] {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin: 0 10px 0 0;
+}
+
+textarea {
+    height: 100%;
+    resize: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid #1e4399;
+    background-color: #1d2634;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #a7a7a7;
+}
+
+canvas {
+    height: 100%;
+    width: 100%;
+}
+
+audio {
+    display: none;
+}
+
+p {
+    text-align: center;
+    margin-top: 0;
+}
+
+button {
+    border: none;
+    background-color: #3988ff;
+    color: #eee;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-family: monospace, "Courier New", Courier;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#btn-settings {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+#settings {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    display: none;
+    flex-direction: column;
+    background-color: #1d2634;
+    border-radius: 5px;
+}
+
+#settings.active {
+    display: flex;
+}
+
+#settings > input {
+    margin-bottom: 10px;
+}
+
+#btn-settings, #settings > button {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 12px;
+}

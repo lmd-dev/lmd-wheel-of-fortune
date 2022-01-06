@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <audio src="sounds/tik.mp3" preload="auto"></audio>
+    <div id="lists">
+      <div>
+        <label><input type="radio" name="chkList" /> Liste des participants</label>
+        <textarea id="lst-players"></textarea>
+      </div>
+      <div>
+        <label><input type="radio" name="chkList" /> Liste des lots</label>
+        <textarea id="lst-presents"></textarea>
+      </div>
+    </div>
+    <div id="wheel">
+      <canvas></canvas>
+      <p>
+        <button id="btn-launch-wheel">Tourner la roue !</button>
+      </p>
+    </div>
+    <div id="settings">
+      <label>Vitesse minimale :</label>
+      <input type="number" id="txt-min-speed" />
+      <label>Vitesse aléatoire :</label>
+      <input type="number" id="txt-random-speed" />
+      <label>Ticks par secteur :</label>
+      <input type="number" id="txt-tick-per-sector" />
+      <label>Taille du texte :</label>
+      <input type="number" id="txt-font-size" />
+      <label>Couleurs :</label>
+      <textarea id="lst-colors" rows="15"></textarea>
+      <button id="btn-save-settings">OK</button>
+      <button id="btn-cancel-settings">Annuler</button>
+    </div>
+    <button id="btn-settings">...</button>
+    <script type="module" src="application/app.js"></script>
+  </body>
+
+</html>
