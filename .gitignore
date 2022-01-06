@@ -1,0 +1,5 @@
+dist
+
+!dist/css
+!dist/index.html
+!dist/sounds
