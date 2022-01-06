@@ -6,7 +6,7 @@ Some settings permits to define the speed of the wheel, size of the texte and co
 
 ## Installation
 
-1. Clone or download the repository
+1. Clone or download the repository in a folder managed by a Web Server (web server is not included)
 2. Go to the root of the app
 3. Run TypeScript compiler :
    > `$ > tsc`
